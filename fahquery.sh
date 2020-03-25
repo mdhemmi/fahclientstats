@@ -5,7 +5,11 @@ set timeout 5
 set prompt  ">"
 
 spawn -noecho telnet [lindex $argv 0] 36330
-expect $prompt
+#expect $prompt 
+expect {
+	"No route to host" { exit 1 }
+	">"
+}
 send "auth [lindex $argv 1]\r"
 expect $prompt
 send "queue-info\r"
@@ -18,6 +22,7 @@ expect {
 		exp_continue
 	}
 	timeout { }
+	eof { }
 }
 puts $slots
 expect $prompt
