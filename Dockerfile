@@ -24,7 +24,7 @@ RUN echo de_DE.UTF-8 UTF-8 >> /etc/locale.gen && \
     locale-gen && \
     update-locale LC_ALL=de_DE.UTF-8 LANG=de_DE.UTF-8
 ENV LANG de_DE.UTF-8
-ENV LANGUAGE de_DE:en
+ENV LANGUAGE de_DE:de
 ENV LC_ALL de_DE.UTF-8
 
 # expect and perl
