@@ -36,3 +36,12 @@ host4 - State: RUNNING Percent done: 61.20% PPD: 3728 TPF: 4 mins 02 secs ETA:  
 host4 - State: DOWNLOAD Percent done: 0.00% PPD: 0 TPF: 0.00 secs ETA:  0.00 secs SLOT: 00 Creditestimate: 0
 host5 - State: RUNNING Percent done: 11.04% PPD: 59525 TPF: 6 mins 32 secs ETA:  9 hours 41 mins SLOT: 01 Creditestimate: 27007
 ```
+
+# open topics
+
+- collection speed using the expect script
+- extend functionality to send the stats to an InfluxDB
+
+# Please provide feedback and ideas for further improvements
+
+
