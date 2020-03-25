@@ -23,7 +23,7 @@ mkdir /opt/fahclientstats
 # Run the container
 
 ```
-docker run --rm -v /opt/fahclientstats/config.json:/opt/fahclientstats/config.json --name fahclientstats fahclientstats
+docker run --rm -v /opt/fahclientstats/config.json:/opt/fahclientstats/config.json --name fahclientstats mdhemmi/fahclientstats
 ```
 # Example ouput  
 
