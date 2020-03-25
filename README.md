@@ -26,7 +26,7 @@ vi /opt/fahclientstats/config.json
    "password":"VMware1!"
 }
 ```
-# Run the container
+Run the container
 
 ```
 docker run --rm -v /opt/fahclientstats/config.json:/opt/fahclientstats/config.json --name fahclientstats mdhemmi/fahclientstats
@@ -52,7 +52,7 @@ vi ~/Document/fahclientstats/config.json
    "password":"VMware1!"
 }
 ```
-# Run the container
+Run the container
 
 ```
 docker run --rm -v ~/Document/fahclientstats/config.json:/opt/fahclientstats/config.json --name fahclientstats mdhemmi/fahclientstats
