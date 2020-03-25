@@ -34,11 +34,11 @@ docker run --rm -v /opt/fahclientstats/config.json:/opt/fahclientstats/config.js
 
 # For example on MacOS
 ```
-mkdir ~/Document/fahclientstats
+mkdir ~/Documents/fahclientstats
 ```
   - create a config.json file equal to the example below (host1 would be the hostname of the client)
 ```
-vi ~/Document/fahclientstats/config.json
+vi ~/Documents/fahclientstats/config.json
 ```
 ```
 {
@@ -55,7 +55,7 @@ vi ~/Document/fahclientstats/config.json
 Run the container
 
 ```
-docker run --rm -v ~/Document/fahclientstats/config.json:/opt/fahclientstats/config.json --name fahclientstats mdhemmi/fahclientstats
+docker run --rm -v ~/Documents/fahclientstats/config.json:/opt/fahclientstats/config.json --name fahclientstats mdhemmi/fahclientstats
 ```
 # Example ouput  
 
