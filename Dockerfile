@@ -31,6 +31,7 @@ ENV LC_ALL de_DE.UTF-8
 
 RUN apt-get install -y \
     telnet \
+    curl \
     expect \
     perl \
     make \
