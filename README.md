@@ -1,6 +1,8 @@
 # Folding at Home client stats
 
-Command line based container to collect stats from each FaH client in your network 
+### All clients are required to have the same password. ###
+
+Command line based container to collect stats from each FaH client in your network. The latest version stores basic stats into a influxdb (not included).  
 
   - create a folder fahclientstats
 
@@ -22,6 +24,11 @@ vi /opt/fahclientstats/config.json
       "host3":"192.168.0.30",
       "host4":"192.168.0.40",
       "host5":"192.168.0.50"
+   },
+   "influxdb":{
+      "ip":"192.168.0.2",
+      "port":"8086",
+      "db":"folding"
    },
    "password":"VMware1!"
 }
@@ -48,6 +55,11 @@ vi ~/Documents/fahclientstats/config.json
       "host3":"192.168.0.30",
       "host4":"192.168.0.40",
       "host5":"192.168.0.50"
+   },
+   "influxdb":{
+      "ip":"192.168.0.2",
+      "port":"8086",
+      "db":"folding"
    },
    "password":"VMware1!"
 }
